@@ -1,1 +1,23 @@
 /* All styles for your header Components live here */
+.header-container {
+    display: flex;
+}
+
+.header-content{
+    display: flex
+}
+
+.header-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1,h2,h3{
+    margin: 10px
+}
+
+h2,h3{
+    color: grey
+}
+
