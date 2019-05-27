@@ -6,17 +6,11 @@ const iconStyles = {
     fontSize: '20px',
 }
 const Footer = ({num})=>{
-    const incNum = ()=> {
-        console.log(num)
-        return num++
-    }
-    // let num = 1
     return (
             <footer className='footer'>
-                <FontAwesomeIcon icon="envelope" style={iconStyles}> 4</FontAwesomeIcon>
+                <FontAwesomeIcon icon="envelope" style={iconStyles}/>
                 <div onClick={()=> {
-                    console.log(incNum())
-                    return incNum()
+                    alert(num++)
                 }
                 }>
                 <FontAwesomeIcon icon="heart" style={iconStyles}/>
