@@ -2,7 +2,17 @@ import React from 'react';
 import './App.css';
 import HeaderContainer from './components/HeaderComponents/HeaderContainer'
 import CardContainer from './components/CardComponents/CardContainer'
-
+// font awesome fonts
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faStroopwafel, faEnvelope, faHeart, faSyncAlt, faCommentDots } from '@fortawesome/free-solid-svg-icons'
+import Footer from './components/FooterComponents/Footer'
+library.add(
+  faStroopwafel,
+  faEnvelope,
+  faHeart,
+  faSyncAlt,
+  faCommentDots
+  )
 
 
 const content = {
@@ -31,6 +41,7 @@ const App = () => {
     <div className='body-container'>
       <HeaderContainer content={content} image={image}/>
       <CardContainer cardContent={cardContent}/>
+      <Footer num={1}/>
     </div>
   );
 };
