@@ -6,18 +6,28 @@
 .header-content{
     display: flex;
     flex-direction: column;
+    margin-left: 6%
 }
 
 .header-title {
     display: flex;
     align-items: center;
+    
+}
+h1{
+    font-size: 20px
+}
+h1,h2,h3,p{
+    margin: 4px
 }
 
-h1,h2,h3{
-    margin: 10px
+.header-container .header-content .header-title h2,h3{
+    color: grey;
+    font-size: 15px;
 }
 
-h2,h3{
-    color: grey
+.header-container img {
+    width: 100%;
+    border-radius: 5px;
+    margin-left: 5px;
 }
-
