@@ -1,1 +1,17 @@
 /* All styles for your Card Components live here */
+
+.card-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 15%;
+    align-items: center;
+    border: 1px solid grey;
+}
+
+.card-content {
+    margin: 10px;
+}
+.img-card{
+    width: 100%
+}

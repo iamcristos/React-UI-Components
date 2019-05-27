@@ -8,6 +8,7 @@ const HeaderContent = ({content})=>{
             <HeaderTitle title={content.title} 
                 handle={content.handle}
                 time={content.time}/>
+            <p>{content.text}</p>
         </div>
     )
 }
