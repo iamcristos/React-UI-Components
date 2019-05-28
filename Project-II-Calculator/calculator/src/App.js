@@ -22,10 +22,10 @@ const mainData =[
 const App = () => {
   return (
     <div className='calculator-container'>
-      <CalculatorDisplay />
+      <CalculatorDisplay display={0} />
       <TopButton content={content}/>
       {mainData.map(item=>(
-        <MainButton content={item} />
+        <MainButton content={item} key={item.id}/>
       ))}
       <TopButton content={lastContent}/>
     </div>
