@@ -5,7 +5,7 @@ import CardContent from './CardContent'
 
 const CardContainer = ({cardContent})=>{
     return (
-        <div className='card-container' onClick={(e)=>{
+        <div className='card-container' onClick={()=>{
             window.location.href= `https://www.reactjs.org`}
             }>
             <div>
