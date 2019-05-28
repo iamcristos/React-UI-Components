@@ -4,7 +4,8 @@ import NumberButton from '../ButtonComponents/NumberButton';
 const buttonStyle = {
     color: 'black',
     width: '25%',
-    height: '40px'
+    height: '40px',
+    fontSize: '30px'
 }
 
 const actionStyle = {
@@ -12,6 +13,7 @@ const actionStyle = {
     backgroundColor: 'red',
     width: '25%',
     height: '40px',
+    fontSize: '30px'
 }
 const MainButton = ({content})=>{
     return (

@@ -6,7 +6,8 @@ import NumberButton from '../ButtonComponents/NumberButton';
 const numberStyle = {
     color : 'black',
     width : '75%',
-    height: '40px'
+    height: '40px',
+    fontSize: '30px'
 }
 
 const actionStyle = {
@@ -15,6 +16,7 @@ const actionStyle = {
     width: '25%',
     height: '40px',
     margin: '0',
+    fontSize: '30px'
 }
 const TopButtonSection = ({content})=>{
     return (
