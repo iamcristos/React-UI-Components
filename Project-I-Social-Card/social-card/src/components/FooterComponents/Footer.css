@@ -1,0 +1,8 @@
+.footer{
+    display: flex;
+    justify-content: space-around;
+    color: grey;
+    width: 50%;
+    margin-top: 5%;
+    margin-right: 35%
+}

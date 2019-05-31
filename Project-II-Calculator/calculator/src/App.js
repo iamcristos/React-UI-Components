@@ -1,21 +1,33 @@
 import React from 'react';
 import './App.css';
+import './fonts';
+import CalculatorDisplay from './components/DisplayComponents/CalculatorDisplay';
+import TopButton from './components/CalculatorComponent/TopButton'
+import MainButton from './components/CalculatorComponent/MainButton'
+const content = {
+  number: 'Clear',
+  action: '÷'
+}
 
+const lastContent = {
+  number: 0,
+  action: '='
+}
+
+const mainData =[
+  {id:1,num1:7, num2:8, num3:9, action:'x'},
+  {id:2,num1:4, num2:5, num3:6, action:'-'},
+  {id:3,num1:1, num2:2, num3:3, action:'+'}
+]
 const App = () => {
   return (
-    <div>
-      <h3>Welcome to React Calculator</h3>
-      <p>
-        We have given you a starter project. You'll want to build out your
-        components in their respective files, remove this code and replace it
-        with the proper components.
-      </p>
-      <p>
-        <strong>
-          Don't forget to `default export` your components and import them here
-          inside of this file in order to make them work.
-        </strong>
-      </p>
+    <div className='calculator-container'>
+      <CalculatorDisplay display={0} />
+      <TopButton content={content}/>
+      {mainData.map(item=>(
+        <MainButton content={item} key={item.id}/>
+      ))}
+      <TopButton content={lastContent}/>
     </div>
   );
 };

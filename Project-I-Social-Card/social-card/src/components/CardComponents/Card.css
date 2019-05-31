@@ -1,1 +1,21 @@
 /* All styles for your Card Components live here */
+
+.card-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 22%;
+    align-items: center;
+    border: 1px solid grey;
+    border-radius: 5px;
+    width: 100%
+}
+
+.card-content {
+    margin: 10px;
+}
+.img-card{
+    width: 100%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px; 
+}
